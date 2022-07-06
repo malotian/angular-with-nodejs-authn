@@ -41,6 +41,7 @@ const auth = () => {
 }
 
 app.post('/authenticate', auth() , (req, res) => {
+    console.log('session ', req.session);
     res.status(200).json({"statusCode" : 200 ,"user" : req.user});
 });
 

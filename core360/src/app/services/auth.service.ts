@@ -21,6 +21,7 @@ export class AuthService {
 
   public authenticate() {
     console.log('authenticate');
-    return this.http.get('/authn-handler/authenticate');
+    return this.http.post('/authn-handler/authenticate', {'username' : "admin", 'password' : 'admin'}).toPromise();
+
   }
 }
