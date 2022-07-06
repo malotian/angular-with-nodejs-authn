@@ -20,7 +20,7 @@ export class AuthService {
   }
 
   public authenticate() {
-    console.log("authenticate");
+    console.log('authenticate');
     return this.http.get('/authn-handler/authenticate');
   }
 }
