@@ -19,9 +19,13 @@ export class AuthService {
     localStorage.setItem('userInfo', JSON.stringify(user));
   }
 
-  public authenticate() {
+  public async authenticate() {
     console.log('authenticate');
-    return this.http.post('/authn-handler/authenticate', {'username' : "admin", 'password' : 'admin'}).toPromise();
-
+    const userInfo = this.http.post('/authn-handler/authenticate', {
+      username: 'admin',
+      password: 'admin',
+    });
+    
+    this.setUserInfo(userInfo);
   }
 }
