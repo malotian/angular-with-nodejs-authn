@@ -5,7 +5,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { CustomerHomeComponent } from './components/customer-home/customer-home.component';
 import { ForbiddenComponent } from './components/forbidden/forbidden.component';
 import { HomeComponent } from './components/home/home.component';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuardService as AuthGuard } from './services/auth.guard.service';
 
 const routes: Routes = [
   {

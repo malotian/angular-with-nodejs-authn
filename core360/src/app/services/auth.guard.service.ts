@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Route, Router, RouterStateSnapshot, UrlSegment, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
+import { AuthService } from './auth.service';
 
 // hardcoded user data.
 const loggedInUser = {
@@ -13,10 +14,10 @@ const loggedInUser = {
  providedIn: 'root'
 })
 
-export class AuthGuard implements CanActivate {
+export class AuthGuardService implements CanActivate {
 
  // inject the router service to allow navigation.
- constructor(private router: Router) { }
+ constructor(private authService : AuthService, private router: Router) { }
 
  canActivate(
  route: ActivatedRouteSnapshot,
