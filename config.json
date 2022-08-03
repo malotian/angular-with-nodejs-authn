@@ -1,0 +1,28 @@
+{
+    "proxy": {
+        "router": {
+            "default": "https://southland.core360dev.net"
+        }
+    },
+    "baseDomain": "core360dev.net",
+    "tenants": [
+        {
+            "id": "t1",
+            "metadata": {
+                "type": "saml",
+                "entryPoint": "https://samltest.id/idp/profile/SAML2/Redirect/SSO",
+                "logoutUrl": "https://samltest.id/idp/profile/Logout",
+                "emailAttribute": "email"
+            }
+        },
+        {
+            "id": "t2",
+            "metadata": {
+                "type": "saml",
+                "entryPoint": "https://samltest.id/idp/profile/SAML2/Redirect/SSO",
+                "logoutUrl": "https://samltest.id/idp/profile/Logout",
+                "emailAttribute": "email"
+            }
+        }
+    ]
+}
