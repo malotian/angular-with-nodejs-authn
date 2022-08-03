@@ -126,12 +126,12 @@ sample output
     
     √ Compiled successfully.
 
-**Note: **This will start a test application at https://t1.core360dev.net, access https://t1.core360dev.net in browser(or click here) 
+**Note: **This will start a test application at https://t1.iam.lab, access https://t1.iam.lab in browser(or click here) 
 
 Useful Information
 
 1. This app is by default configured with well known test saml identity provider https://samltest.id/, 
 2. SAML SP Configuration in config.json
-3. SAML SP Metadata endpoint is https://t1.core360dev.net/saml/metadata
-4. Debug/Test endpoint https://t1.core360dev.net/authn-handler/saml/me to check logged-in user details
+3. SAML SP Metadata endpoint is https://t1.iam.lab/saml/metadata
+4. Debug/Test endpoint https://t1.iam.lab/authn-handler/saml/me to check logged-in user details
 
